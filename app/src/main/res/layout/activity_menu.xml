@@ -11,30 +11,37 @@
 
     <Button
         android:id="@+id/btnKardex"
-        android:text="Kardex"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="Kardex" />
 
     <Button
         android:id="@+id/btnHorario"
-        android:text="Horario"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="Horario" />
 
     <Button
         android:id="@+id/btnReticula"
-        android:text="Retícula"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:text="Retícula" />
 
     <Button
         android:id="@+id/btnPersonales"
-        android:text="Datos personales"
-        android:layout_margin="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Datos personales" />
+
+    <Button
+        android:id="@+id/btnResidencias"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Residencias" />
 
 </LinearLayout>

@@ -7,10 +7,12 @@ import android.os.Bundle
 import android.widget.Button
 
 class MenuActivity : AppCompatActivity() {
+
     lateinit var btnKardex : Button
     lateinit var btnHorario : Button
     lateinit var btnReticula : Button
     lateinit var btnPersonales : Button
+    lateinit var btnResidencias : Button
 
     lateinit var stringBD : String
     lateinit var stringAlumno : String
@@ -47,6 +49,10 @@ class MenuActivity : AppCompatActivity() {
 
         btnHorario.setOnClickListener {
             invocarActivity(ScheduleActivity::class.java)
+        }
+
+        btnResidencias.setOnClickListener {
+            invocarActivity(Residencias_registro::class.java)
         }
 
     }
