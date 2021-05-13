@@ -18,8 +18,15 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="FlatButton" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/myPeach</item>
+        <item name="colorControlHighlight">@color/myRed</item>
+    </style>
 
     <style name="Theme.DADM_A_U1AppEscolar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.DADM_A_U1AppEscolar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <color name="myPeach" />
+    <color name="myRed" />
 </resources>

@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DADM_A_U1AppEscolar">
-        <activity android:name=".Residencias_registro"></activity>
+        <activity android:name=".Registrar_proyectos"></activity>
+        <activity android:name=".Proyectos_disponibles" />
+        <activity android:name=".Residencias_registro" />
         <activity android:name=".ScheduleActivity" />
         <activity android:name=".AcademicAdvanceActivity" />
         <activity android:name=".KardexActivity" />
