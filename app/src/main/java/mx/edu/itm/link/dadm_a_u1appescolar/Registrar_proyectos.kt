@@ -7,5 +7,8 @@ class Registrar_proyectos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrar_proyectos)
+
+
+
     }
 }
