@@ -19,15 +19,15 @@ class Residencias_registro : AppCompatActivity() {
 
 
         btnResP.setOnClickListener {
-            invocarActivity(Proyectos_disponibles::class.java)
+            invocarActivity2(Proyectos_disponibles::class.java)
 
         }
         btnResR.setOnClickListener {
-                invocarActivity(Registrar_proyectos::class.java)
+                invocarActivity2(Registrar_proyectos::class.java)
             }
 
     }
-    private fun invocarActivity(clase : Class<*>) {
+    private fun invocarActivity2(clase : Class<*>) {
         val intent = Intent(this,clase)
         startActivityForResult(intent, 1)
     }
