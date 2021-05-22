@@ -39,6 +39,20 @@
                     "contrasenia":"111"
                 }
             ],
+        "proyectos" : [
+                {
+                    "nombre_proyecto":"Internet en electricidad",
+                    "Descripcion":"Como esta idea podria revolucionar la tecnologia",
+                    "Encargado":"Ayala Robles Kenia Aline",
+
+                },
+                {
+                    "Nombre_proyecto":"Agua purificada sin quimicos",
+                    "Descripcion":"proyecto para ayudar a comunidades de escasos recurssos",
+                    "Encargado":" Ortiz Ortiz Octavio Salud",
+
+                }
+            ],
             "materias" : [
                 {
                     "semestre-1" : [
