@@ -7,7 +7,7 @@ import android.widget.Button
 
 class Residencias_registro : AppCompatActivity() {
    // lateinit var btnResP : Button
-    //lateinit var btnResR : Button
+    lateinit var btnResR : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

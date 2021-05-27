@@ -11,10 +11,11 @@ class MenuActivity : AppCompatActivity() {
     lateinit var btnHorario : Button
     lateinit var btnReticula : Button
     lateinit var btnPersonales : Button
+    lateinit var btnResidencias : Button
 
     lateinit var stringBD : String
     lateinit var stringAlumno : String
-    lateinit var stringProyecto: String
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,13 +26,15 @@ class MenuActivity : AppCompatActivity() {
         btnReticula = findViewById(R.id.btnReticula)
         btnPersonales = findViewById(R.id.btnPersonales)
 
+        btnResidencias = findViewById(R.id.btnResidencias)
+
         stringBD = intent.getStringExtra("bd")
         if(stringBD == null) {
             stringBD = resources.getString(R.string.jsonAlumnos)
         }
 
         stringAlumno = intent.getStringExtra("alumno")
-        stringProyecto = intent.getStringExtra("nombre_proyecto")
+
 
         println("Alumno:")
         println(stringAlumno)
@@ -40,7 +43,6 @@ class MenuActivity : AppCompatActivity() {
         println(stringBD)
 
         println("Proyecto: ")
-        println(stringProyecto)
 
         btnKardex.setOnClickListener {
             invocarActivity(KardexActivity::class.java)
@@ -53,6 +55,9 @@ class MenuActivity : AppCompatActivity() {
         btnHorario.setOnClickListener {
             invocarActivity(ScheduleActivity::class.java)
         }
+        btnResidencias.setOnClickListener {
+            invocarActivity(Residencias_registro::class.java)
+        }
 
     }
 
@@ -60,7 +65,6 @@ class MenuActivity : AppCompatActivity() {
         val intent = Intent(this,clase)
         intent.putExtra("bd",stringBD)
         intent.putExtra("alumno",stringAlumno)
-        intent.putExtra("nombre_producto",stringProyecto)
         startActivityForResult(intent, 1)
     }
 

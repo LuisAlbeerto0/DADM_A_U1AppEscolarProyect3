@@ -40,7 +40,7 @@ class Registrar_proyectos : AppCompatActivity() {
 
 
             val Proyectos = jsonBD.getJSONArray("proyectos")
-            Proyectos.put(json)
+                  Proyectos.put(json)
 
             jsonBD = JSONObject()
             jsonBD.put("proyectos", Proyectos)
