@@ -39,20 +39,7 @@
                     "contrasenia":"111"
                 }
             ],
-        "proyectos" : [
-                {
-                    "nombre_proyecto":"Internet en electricidad",
-                    "Descripcion":"Como esta idea podria revolucionar la tecnologia",
-                    "Encargado":"Ayala Robles Kenia Aline",
 
-                },
-                {
-                    "Nombre_proyecto":"Agua purificada sin quimicos",
-                    "Descripcion":"proyecto para ayudar a comunidades de escasos recurssos",
-                    "Encargado":" Ortiz Ortiz Octavio Salud",
-
-                }
-            ],
             "materias" : [
                 {
                     "semestre-1" : [
@@ -135,6 +122,22 @@
                 }
             ]
         }
+    </string>
+     <string name="jsonProyectos">
+        "proyectos" : [
+                {
+                    "nombre_proyecto":"Internet en electricidad",
+                    "Descripcion":"Como esta idea podria revolucionar la tecnologia",
+                    "Encargado":"Ayala Robles Kenia Aline",
+
+                },
+                {
+                    "Nombre_proyecto":"Agua purificada sin quimicos",
+                    "Descripcion":"proyecto para ayudar a comunidades de escasos recurssos",
+                    "Encargado":" Ortiz Ortiz Octavio Salud",
+
+                }
+            ],
     </string>
     <string name="title_activity_academic_advance">AcademicAdvanceActivity</string>
     <!-- Strings used for fragments for navigation -->

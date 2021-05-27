@@ -100,4 +100,21 @@ class AdminBD {
         }
     }
 
+    fun generaProyecto(stringBD: String, strProyecto: String) : JSONArray {
+     try{
+         val semestre = strProyecto.toInt()
+
+         var jsonAlumnoProyectos = JSONArray()
+         val jsonBD = JSONObject(stringBD)
+         val jsonArrayProyecto = jsonBD.getJSONArray("Proyectos")
+         println("JSON Array Proyectos: " + jsonArrayProyecto)
+
+         return jsonAlumnoProyectos
+     }catch (e:Exception){
+         e.printStackTrace()
+
+         return JSONArray()
+     }
+    }
+
 }

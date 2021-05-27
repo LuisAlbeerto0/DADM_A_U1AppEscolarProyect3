@@ -14,6 +14,7 @@ class MenuActivity : AppCompatActivity() {
 
     lateinit var stringBD : String
     lateinit var stringAlumno : String
+    lateinit var stringProyecto: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,12 +31,16 @@ class MenuActivity : AppCompatActivity() {
         }
 
         stringAlumno = intent.getStringExtra("alumno")
+        stringProyecto = intent.getStringExtra("nombre_proyecto")
 
         println("Alumno:")
         println(stringAlumno)
 
         println("BD:")
         println(stringBD)
+
+        println("Proyecto: ")
+        println(stringProyecto)
 
         btnKardex.setOnClickListener {
             invocarActivity(KardexActivity::class.java)
@@ -55,6 +60,7 @@ class MenuActivity : AppCompatActivity() {
         val intent = Intent(this,clase)
         intent.putExtra("bd",stringBD)
         intent.putExtra("alumno",stringAlumno)
+        intent.putExtra("nombre_producto",stringProyecto)
         startActivityForResult(intent, 1)
     }
 
