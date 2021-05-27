@@ -18,16 +18,17 @@ class ScheduleActivity : AppCompatActivity() {
 
         val stringAlumno = intent.getStringExtra("alumno")
 
-        val stringProyecto = intent.getStringExtra("Proyecto")
+        val stringProyecto = intent.getStringExtra("proyecto")
 
         // De String a JSON
         val bd = JSONObject(stringBD)
         val jsonAlumno = JSONObject(stringAlumno)
+        val jsonProyectos = JSONObject(stringProyecto)
 
         // Se obtiene el semestre
         val strSemestre = jsonAlumno.getString("semestre")
 
-        val strProyectos= jsonAlumno.getString("nombre_proyecto")
+        val strProyectos= jsonProyectos.getString("nombre_proyecto")
 
         val admin = AdminBD()
         var jsonAlumnoMaterias = admin.generaHorario(stringBD, strSemestre)

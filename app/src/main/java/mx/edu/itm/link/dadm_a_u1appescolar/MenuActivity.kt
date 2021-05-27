@@ -79,6 +79,7 @@ class MenuActivity : AppCompatActivity() {
                 stringBD = it
                 println(it)
             }
+
         }
     }
 
