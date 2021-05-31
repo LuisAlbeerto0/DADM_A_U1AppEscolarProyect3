@@ -106,7 +106,7 @@ class AdminBD {
 
          var jsonAlumnoProyectos = JSONArray()
          val jsonBD = JSONObject(stringBD)
-         val jsonArrayProyecto = jsonBD.getJSONArray("Proyectos")
+         val jsonArrayProyecto = jsonBD.getJSONArray("proyectos")
          println("JSON Array Proyectos: " + jsonArrayProyecto)
 
          return jsonAlumnoProyectos

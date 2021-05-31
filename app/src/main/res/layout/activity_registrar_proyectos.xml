@@ -18,7 +18,7 @@
 
     <EditText
         android:id="@+id/editNombre"
-        android:hint="Nombre del proyecto"
+        android:hint="Nombre de la empresa"
         android:layout_margin="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -37,9 +37,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <EditText
+        android:id="@+id/editLGAC"
+        android:hint="LGAC "
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/btnGuardarProyecto"
         android:text="Guardar Proyecto"
+        android:background="#64B177"
         android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

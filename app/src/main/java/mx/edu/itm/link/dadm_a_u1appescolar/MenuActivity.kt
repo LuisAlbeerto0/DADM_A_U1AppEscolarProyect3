@@ -14,7 +14,9 @@ class MenuActivity : AppCompatActivity() {
     lateinit var btnResidencias : Button
 
     lateinit var stringBD : String
+    lateinit var stringBD2 : String
     lateinit var stringAlumno : String
+    lateinit var stringProyecto: String
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,20 +31,24 @@ class MenuActivity : AppCompatActivity() {
         btnResidencias = findViewById(R.id.btnResidencias)
 
         stringBD = intent.getStringExtra("bd")
+        //stringBD2 = intent.getStringExtra("bd")
         if(stringBD == null) {
             stringBD = resources.getString(R.string.jsonAlumnos)
+            //stringBD2 = resources.getString(R.string.jsonproyectos)
         }
 
+
+
+
+
         stringAlumno = intent.getStringExtra("alumno")
-
-
-        println("Alumno:")
-        println(stringAlumno)
+        //stringProyecto= intent.getStringExtra("proyecto")
 
         println("BD:")
         println(stringBD)
 
         println("Proyecto: ")
+      //  println(stringProyecto)
 
         btnKardex.setOnClickListener {
             invocarActivity(KardexActivity::class.java)
@@ -64,7 +70,9 @@ class MenuActivity : AppCompatActivity() {
     private fun invocarActivity(clase : Class<*>) {
         val intent = Intent(this,clase)
         intent.putExtra("bd",stringBD)
+        //intent.putExtra("bd2",stringBD2)
         intent.putExtra("alumno",stringAlumno)
+       //  intent.putExtra("proyectos",stringProyecto)
         startActivityForResult(intent, 1)
     }
 

@@ -14,6 +14,7 @@ class ScheduleActivity : AppCompatActivity() {
         var stringBD = intent.getStringExtra("bd")
         if(stringBD == null) {
             stringBD = resources.getString(R.string.jsonAlumnos)
+
         }
 
         val stringAlumno = intent.getStringExtra("alumno")
@@ -28,7 +29,7 @@ class ScheduleActivity : AppCompatActivity() {
         // Se obtiene el semestre
         val strSemestre = jsonAlumno.getString("semestre")
 
-        val strProyectos= jsonProyectos.getString("nombre_proyecto")
+        val strProyectos= jsonProyectos.getString("nombre_empresa")
 
         val admin = AdminBD()
         var jsonAlumnoMaterias = admin.generaHorario(stringBD, strSemestre)

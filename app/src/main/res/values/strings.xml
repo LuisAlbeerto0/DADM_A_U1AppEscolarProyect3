@@ -31,6 +31,13 @@
                     "semestre":8,
                     "contrasenia":"112233"
                 },
+                 {
+                    "no_control":"21120005",
+                    "nombre":"Julio",
+                    "carrera":"ITICs",
+                    "semestre":9,
+                    "contrasenia":"1122"
+                },
                 {
                     "no_control":"21120005",
                     "nombre":"Beto",
@@ -39,7 +46,14 @@
                     "contrasenia":"111"
                 }
             ],
-
+            "proyecto" : [
+                {
+                    "nombre_empresa" : "La_costeña",
+                    "Descripcion":"la_vida_con_internet_en_luz",
+                    "Encargado":"Ayala_Robles_Kenia_Aline",
+                    "LGAC":"Tecnologico_de_Morelia"
+                }
+            ],
             "materias" : [
                 {
                     "semestre-1" : [
@@ -123,22 +137,24 @@
             ]
         }
     </string>
-     <string name="jsonProyectos">
-        "proyectos" : [
+<string name="jsonproyectos">
+    {
+    "proyectos" : [
                 {
-                    "nombre_proyecto":"Internet en electricidad",
-                    "Descripcion":"Como esta idea podria revolucionar la tecnologia",
+                    "nombre_empresa" : "La costeña",
+                    "Descripcion":"la vida con internet en luz",
                     "Encargado":"Ayala Robles Kenia Aline",
-
+                    "LGAC":"Tecnologico de Morelia"
                 },
                 {
-                    "Nombre_proyecto":"Agua purificada sin quimicos",
-                    "Descripcion":"proyecto para ayudar a comunidades de escasos recurssos",
-                    "Encargado":" Ortiz Ortiz Octavio Salud",
-
+                    "nombre_empresa":"La fina",
+                    "Descripcion":"Agua potable para todos",
+                    "Encargado":"Ortiz Ortiz Octavio Salud",
+                    "LGAC":"Tecnologico de Morelia"
                 }
-            ],
-    </string>
+            ]
+    }
+</string>
     <string name="title_activity_academic_advance">AcademicAdvanceActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
