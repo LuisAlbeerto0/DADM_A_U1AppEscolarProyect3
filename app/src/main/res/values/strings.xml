@@ -52,6 +52,12 @@
                     "Descripcion":"la_vida_con_internet_en_luz",
                     "Encargado":"Ayala_Robles_Kenia_Aline",
                     "LGAC":"Tecnologico_de_Morelia"
+                },
+        {
+                    "nombre_empresa":"La fina",
+                    "Descripcion":"Agua potable para todos",
+                    "Encargado":"Ortiz Ortiz Octavio Salud",
+                    "LGAC":"Tecnologico de Morelia"
                 }
             ],
             "materias" : [
